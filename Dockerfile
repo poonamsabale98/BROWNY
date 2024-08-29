@@ -10,7 +10,7 @@ RUN apt-get update && \
 EXPOSE 80
 
 # Copy the static ToDo app files to the Apache server directory
-COPY  Browny /browny-v1.0  /var/www/html/
+COPY  Browny /browny-v1.0/  /var/www/html/
 
 # Start Apache in the foreground
 CMD ["apache2ctl", "-D", "FOREGROUND"]
